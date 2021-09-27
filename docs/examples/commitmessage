@@ -1,0 +1,39 @@
+#<type>: <----- description up to 50 chars ------>
+#
+#Semver PATCH
+#fix, build, chore, ci, docs, style, refactor, perf, test
+#
+#Semver MINOR
+#feat: 
+#
+#Semver MAJOR (for any type)
+#Append ! to any type (fix!:)
+#Footer: BREAKING CHANGE:
+#
+#More detailed explanatory text, if necessary. Wrap it to about 72
+#characters or so. In some contexts, the first line is treated as the
+#subject of the commit and the rest of the text as the body. The
+#blank line separating the summary from the body is critical (unless
+#you omit the body entirely); various tools like `log`, `shortlog`
+#and `rebase` can get confused if you run the two together.
+#
+#Explain the problem that this commit is solving. Focus on why you
+#are making this change as opposed to how (the code explains that).
+#Are there side effects or other unintuitive consequences of this
+#change? Here's the place to explain them.
+#
+#Further paragraphs come after blank lines.
+#
+#- Bullet points are okay, too
+#
+#If you use an issue tracker, put references to them at the bottom,
+#like this:
+#
+#Fixes: #123
+#See also: #456, #789
+#
+# [optional footer(s)]
+# BREAKING CHANGE:
+# https://git-scm.com/docs/git-interpret-trailers
+# This commit message is based on https://chris.beams.io/posts/git-commit/
+# And Conventional Commits https://www.conventionalcommits.org/en/v1.0.0/

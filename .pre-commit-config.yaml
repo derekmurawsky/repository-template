@@ -1,0 +1,16 @@
+fail_fast: true
+repos:
+  - repo: local
+    hooks:
+    - id: gitleaks
+      name: GitLeaks
+      description: Detect secrets in the current commit using Gitleaks
+      entry: zricethezav/gitleaks --path=/src --no-git
+      language: docker_image
+      types: [file]
+    - id: markdownlint
+      name: MarkdownLint
+      description: Lint all markdown files
+      entry: --workdir /workdir davidanson/markdownlint-cli2 --path=/src "**/*.md"
+      language: docker_image
+      types: [markdown]

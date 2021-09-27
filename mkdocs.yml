@@ -1,0 +1,31 @@
+site_name: Example Repository Template
+site_url: https://repo-template.murawsky.net
+repo_url: https://github.com/derekmurawsky/repository-template
+nav:
+  - Home: 'README.md'
+  - 'Containerized Tools': 'ContainerizedTools.md'
+  - 'Markdown Architectural Decision Records':
+    - 'What are MADRs': 'MADRs/README.md'
+    - 'Architectural Decision Log': 
+      - 'Decision Log': 'MADRs/decisions/README.md'
+      - 'Use Markdown Architectural Decision Records': 'MADRs/decisions/0000-use-markdown-architectural-decision-records.md'
+  - MarkdownLint: 'MarkdownLint.md'
+  - MKDocs: 'MKDocs.md'
+  - 'Open Source Best Practices': 'OpenSourcePractices.md'
+  - 'Pre-commit Framework': 'PreCommit.md'
+  - 'Semantic Versioning': 'SemVer.md'
+  - VSCode: 'VSCode.md'
+theme:
+  name: 'material'
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/brands/git-alt
+  features:
+    - search.suggest
+    - navigation.indexes
+plugins:
+  - search
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

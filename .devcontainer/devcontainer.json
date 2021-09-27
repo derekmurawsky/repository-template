@@ -7,23 +7,37 @@
 		// Update 'VARIANT' to pick an Ubuntu version: focal, bionic
 		"args": { "VARIANT": "focal" }
 	},
-
+	// For Docker-in-docker support https://github.com/microsoft/vscode-dev-containers/blob/main/script-library/docs/docker.md
+	"runArgs": ["--init"],
+	"overrideCommand": false,
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
-
+	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"yzhang.markdown-all-in-one",
 		"davidanson.vscode-markdownlint",
 		"streetsidesoftware.code-spell-checker",
 		"eamodio.gitlens",
-		"gruntfuggly.todo-tree"
+		"gruntfuggly.todo-tree",
+		"exiasr.hadolint",
+		"ms-azuretools.vscode-docker"
+	],
+
+	"mounts": [
+		//"source=//var/run/docker.sock,target=/var/run/docker.sock,type=bind,consistency=cached"
+		"source=//var/run/docker.sock,target=//var/run/docker-host.sock,type=bind"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	// 8000 is for mkdocs
+	"forwardPorts": [8000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",

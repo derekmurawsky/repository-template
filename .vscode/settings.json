@@ -1,8 +1,36 @@
 {
     "cSpell.words": [
         "Anson's",
+        "CODEOWNERS",
+        "Dockerfiles",
+        "Intelli",
+        "MADRs",
+        "TLDR",
+        "TODOs",
         "adrlog",
         "adrlogstop",
-        "devcontainer"
+        "anson",
+        "commit",
+        "commitlint",
+        "commitmessage",
+        "commit’s",
+        "davidanson",
+        "devcontainer",
+        "eamodio",
+        "exiasr",
+        "fontawesome",
+        "gitleaks",
+        "gitlens",
+        "gruntfuggly",
+        "innersource",
+        "materialx",
+        "mkdocs",
+        "pymdownx",
+        "s",
+        "semver",
+        "socio",
+        "squidfunk",
+        "twemoji",
+        "zricethezav"
     ]
 }
